@@ -18,12 +18,12 @@ conn.commit()
 now = datetime.datetime.now()
 start = int(input('Enter the Starting Year:'))
 while start < 1970 or start > now.year:
-        start = int(
-            input('The Year must be higher then 1969 and lower than ' + str(now.year) + '! Enter the Starting Year:'))
+    start = int(
+        input('The Year must be higher then 1969 and lower than ' + str(now.year) + '! Enter the Starting Year:'))
 
 end = int(input('Enter the Ending Year:'))
 while end > now.year or end < 1970:
-        end = int(input('Enter a year lower than ' + str(now.year) + ' and higher than 1970! Enter the Ending Year:'))
+    end = int(input('Enter a year lower than ' + str(now.year) + ' and higher than 1970! Enter the Ending Year:'))
 
 check = False  # check if table is already created
 years = []  # append all years in array
@@ -56,6 +56,7 @@ while y <= end:
 
     # Year array
     years.append(str(y))
+
 
     # Dataframe Years to SQL
     dfy = pd.DataFrame({'year': years}, columns=['year'])
