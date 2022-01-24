@@ -1,4 +1,4 @@
-# NFL_Scraping
+# NFL Passing Stats Scraping and Top 10 champions candidates calculation
 Processing of Information Course - ISPGAYA
 
 ## 1st Project 
